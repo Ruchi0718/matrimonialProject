@@ -1,15 +1,14 @@
-import React from 'react';
-import Navbar from '../../component/navbar';
+import React from "react";
+import Navbar from "../../component/navbar";
+import Pagedata from "../../component/pagedata";
 
 const HomePage = () => {
-    return (
-        <div>
-            {/* <h1>This is Home Page</h1> */}
-            < Navbar/>
-          
+  return (
+    <div>
+      <Navbar />
+      <Pagedata/>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default HomePage
+export default HomePage;

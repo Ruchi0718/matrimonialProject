@@ -29,7 +29,6 @@ const Navbar = () => {
 
       <Box
         sx={{
-          
           width: "100%",
           height: "100vh",
           backgroundImage: `url(${Image})`,
@@ -39,8 +38,6 @@ const Navbar = () => {
       >
         <Form />
       </Box>
-
-
     </Box>
   );
 };

@@ -41,7 +41,7 @@ const Form = () => {
       <Box
         sx={{
           marginLeft: "10px",
-          marginTop: "5%",
+          marginTop: "7%",
           width: 450,
           height: 500,
           backgroundColor: "#F8F8F8",

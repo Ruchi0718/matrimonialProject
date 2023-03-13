@@ -6,6 +6,11 @@ import BorderColorIcon from "@mui/icons-material/BorderColor";
 import PersonIcon from "@mui/icons-material/Person";
 import GroupsIcon from "@mui/icons-material/Groups";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
+import Image10 from "../../assets/image10.jpg";
+import Image11 from "../../assets/image11.jpg";
+import Image12 from "../../assets/image12.jpg";
+import Footer from "../footer";
+
 const Pagedata = () => {
   return (
     <>
@@ -118,9 +123,8 @@ const Pagedata = () => {
 
       <Box
         sx={{
-          height: 600,
+          height: 300,
           width: "100%",
-          border: "2px solid black",
         }}
       >
         <Grid container xs={12}>
@@ -130,7 +134,84 @@ const Pagedata = () => {
             FEATURED PROFILE
           </Typography>
         </Grid>
+        <Grid container xs={12}></Grid>
+        <Grid container xs={12}>
+          <Typography
+            sx={{ fontWeight: 600, fontSize: "xx-large", marginLeft: "38%" }}
+          >
+            SUCCESS STORIES
+          </Typography>
+        </Grid>
+        <Grid container xs={12}>
+          <Grid item xs={6}>
+            <Typography
+              sx={{
+                textAlign: "justify",
+                textJustify: "inter-word",
+                marginLeft: "10px",
+              }}
+            >
+              Watch out this space it would be loaded with happy customers
+              review very soon.We have just started this month but already
+              customers have Demo Matrimony Management,Ahemdabaad engage.
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid m={2} container xs={12}>
+          <Button
+            variant="contained"
+            sx={{ marginRight: "90%", background: "grey" }}
+          >
+            More
+          </Button>
+        </Grid>
       </Box>
+      <Box
+        sx={{
+          height: 300,
+          width: "100%",
+          background: "#F8F8F8",
+        }}
+      >
+        <Grid container xs={12}>
+          <Typography
+            sx={{ fontWeight: 600, fontSize: "xx-large", marginLeft: "40%" }}
+          >
+            ANNOUNCEMENT
+          </Typography>
+        </Grid>
+        <Grid container xs={12}>
+          <Grid item xs={3}>
+            <img src={Image2} alt="image2" />
+          </Grid>
+          <Grid m={5} item xs={4}>
+            <Typography>ATTN: LAUNCH OF NEW MATRIMONY LAYOUT</Typography>
+            <Typography sx={{ alignItems: "justify" }}>
+              We pleased to announce new version
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid m={2} container xs={12}>
+          <Button
+            variant="contained"
+            sx={{marginLeft:"25%",background: "grey" }}
+          >
+            More
+          </Button>
+        </Grid>
+      </Box>
+      <Grid  m={5}container xs={12}>
+        <Grid item xs={4}>
+          <img src={Image10} alt="image10" />
+        </Grid>
+        <Grid item xs={4}>
+          <img src={Image11} alt="image11" />
+        </Grid>
+        <Grid item xs={4}>
+        <img src={Image12} alt="image12" />
+        </Grid>
+      </Grid>
+      <Footer/>
     </>
   );
 };

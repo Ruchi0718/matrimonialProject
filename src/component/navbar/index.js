@@ -14,31 +14,33 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <Box sx={{ display: "flex" }}>
-      <AppBar sx={{ background: "#FF311A" }}>
-        <Toolbar>
-          <Box>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "white" }}>
-                {item}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </AppBar>
+    <>
+      <Box sx={{ display: "flex" }}>
+        <AppBar sx={{ background: "#FF311A" }}>
+          <Toolbar>
+            <Box>
+              {navItems.map((item) => (
+                <Button key={item} sx={{ color: "white" }}>
+                  {item}
+                </Button>
+              ))}
+            </Box>
+          </Toolbar>
+        </AppBar>
 
-      <Box
-        sx={{
-          width: "100%",
-          height: "100vh",
-          backgroundImage: `url(${Image})`,
-          backgroundSize: "100% 100%",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <Form />
+        <Box
+          sx={{
+            width: "100%",
+            height: "100vh",
+            backgroundImage: `url(${Image})`,
+            backgroundSize: "100% 100%",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <Form />
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 };
 

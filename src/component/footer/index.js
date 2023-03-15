@@ -10,7 +10,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
   return (
-    <Box sx={{ height: 250, width: "108%", backgroundColor: "#E8E8E8" }}>
+    <Box sx={{ height: 250, width:"108%",overflowX :"hidden", backgroundColor: "#E8E8E8" }}>
       <Grid m={3} container xs={12}>
         <Grid m={2} item xs={2}>
           <Typography sx={{ fontWeight: "bold" }}>Our Links</Typography>

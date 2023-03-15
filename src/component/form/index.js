@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Box, Grid, Typography, Button,Checkbox } from "@mui/material";
-import FormControlLabel from '@mui/material/FormControlLabel';
+import { Box, Grid, Typography, Button, Checkbox } from "@mui/material";
+import FormControlLabel from "@mui/material/FormControlLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
@@ -40,10 +40,10 @@ const Form = () => {
     <>
       <Box
         sx={{
-          marginLeft: "10px",
-          marginTop: "7%",
+          marginLeft: "4%",
+          // marginTop: "1%",
           width: 450,
-          height: 500,
+          height: 550,
           backgroundColor: "#F8F8F8",
         }}
       >
@@ -178,7 +178,10 @@ const Form = () => {
             </FormControl>
           </Grid>
         </Grid>
-        <FormControlLabel control={<Checkbox defaultChecked />} label="With Photo Advance Search"/>
+        <FormControlLabel
+          control={<Checkbox defaultChecked />}
+          label="With Photo Advance Search"
+        />
         <Grid m={2} container xs={12}>
           <Button sx={{ marginLeft: "30%" }} variant="contained">
             Search

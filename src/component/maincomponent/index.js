@@ -91,7 +91,15 @@ const MainComponent = () => {
           </Box>
         </AppBar>
         <AppBar sx={{ background: "#FF311A" }} position="static">
-          <Box sx={{ height: 50 }}>
+          <Box sx={{ height: 50
+          // ,width:{
+          //   xs:100,
+          //   sm:200,
+          //   md:300,
+          //   lg:400,
+          //   xl:500,
+          // }
+           }}>
             {navItems2.map((item) => (
               <Button key={item} sx={{ color: "white" }}>
                 {item}

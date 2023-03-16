@@ -10,19 +10,19 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
   return (
-    <Box sx={{ height: 250, width:"108%",overflowX :"hidden", backgroundColor: "#E8E8E8" }}>
+    <Box sx={{ height: 250, width:"108%",overflowX :"hidden",backgroundColor: "#E8E8E8" }}>
       <Grid m={3} container xs={12}>
         <Grid m={2} item xs={2}>
-          <Typography sx={{ fontWeight: "bold" }}>Our Links</Typography>
+          <Typography sx={{ fontWeight: "bold",marginLeft:"5%" }}>Our Links</Typography>
         </Grid>
         <Grid m={2} item xs={2}>
-          <Typography sx={{ fontWeight: "bold" }}>Support</Typography>
+          <Typography sx={{ fontWeight: "bold",marginLeft:"8%" }}>Support</Typography>
         </Grid>
         <Grid m={2} item xs={2}>
-          <Typography sx={{ fontWeight: "bold" }}>Contact Info</Typography>
+          <Typography sx={{ fontWeight: "bold",marginLeft:"1%"}}>Contact Info</Typography>
         </Grid>
         <Grid m={2} item xs={2}>
-          <Typography sx={{ fontWeight: "bold" }}>Follow Us</Typography>
+          <Typography sx={{ fontWeight: "bold"}}>Follow Us</Typography>
         </Grid>
       </Grid>
       <Grid container xs={12}>
@@ -73,7 +73,7 @@ const Footer = () => {
             555-8888-999
           </Grid>
         </Grid>
-        <Grid item xs={2}>
+        <Grid sx={{marginLeft:"3%"}} item xs={2}>
           <Icon>
             <FacebookIcon />
           </Icon>

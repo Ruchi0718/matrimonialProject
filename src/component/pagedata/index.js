@@ -16,23 +16,29 @@ const Pagedata = () => {
     <>
       <Grid container item xs={12}>
         <Grid item xs={6}>
-          <Typography sx={{ fontWeight: 600, fontSize: "xx-large" }}>
+          <Typography
+            sx={{ fontWeight: 600, fontSize: "xx-large", marginLeft: "50%" }}
+          >
             WELCOME
           </Typography>
         </Grid>
         <Grid item xs={6}>
-          <Typography sx={{ fontWeight: 600, fontSize: "xx-large" }}>
+          <Typography
+            sx={{ fontWeight: 600, fontSize: "xx-large", marginLeft: "45%" }}
+          >
             VIDEOS
           </Typography>
         </Grid>
       </Grid>
+      <br></br>
       <Grid container xs={12}>
-        <Grid item xs={5}>
+        <Grid item xs={4}>
           <Typography
             sx={{
-              textAlign: "justify",
-              textJustify: "inter-word",
-              marginLeft: "10px",
+              marginLeft: "10%",
+              // textAlign: "justify",
+              // textJustify: "inter-word",
+              // marginLeft: "10px",
             }}
           >
             Make your Software.com presents new free matrimonial website designs
@@ -42,7 +48,12 @@ const Pagedata = () => {
             <u>https://www.makeyoursoftware.com</u>
           </Typography>
           <Button
-            sx={{ float: "left", background: "grey" }}
+            sx={{
+              float: "left",
+              background: "grey",
+              margin: 2,
+              marginLeft: "10%",
+            }}
             variant="contained"
           >
             {" "}
@@ -50,10 +61,10 @@ const Pagedata = () => {
           </Button>
         </Grid>
         <Grid item xs={3}>
-          <img src={Image2} alt="image2" />
+          <img style={{ marginLeft: "20%" }} src={Image2} alt="image2" />
         </Grid>
         <Grid item xs={4}>
-          <img src={Image3} alt="image3" />
+          <img style={{ marginLeft: "20%" }} src={Image3} alt="image3" />
         </Grid>
       </Grid>
       <Box
@@ -75,8 +86,8 @@ const Pagedata = () => {
             HOWS IT WORKS
           </Typography>
         </Grid>
-        <Grid container xs={12}>
-          <Grid item xs={3}>
+        {/* <Grid container xs={12}>
+          <Grid sx={{marginLeft:"8%"}} item xs={3}>
             <Icon>
               <BorderColorIcon sx={{ color: "white" }} />
             </Icon>
@@ -96,24 +107,37 @@ const Pagedata = () => {
               <ChatBubbleIcon sx={{ color: "white" }} />
             </Icon>
           </Grid>
-        </Grid>
+        </Grid> */}
+        <br></br>
         <Grid container xs={12}>
-          <Grid item xs={3}>
+          <Grid ml={10} item xs={2}>
+            <Icon sx={{marginLeft:"80px"}}>
+              <BorderColorIcon sx={{ color: "white" }} />
+            </Icon>
             <Typography sx={{ color: "white", fontSize: "small" }}>
               FREE REGISTRATION
             </Typography>
           </Grid>
           <Grid item xs={3}>
+             <Icon sx={{marginLeft:"80px"}}>
+              <PersonIcon sx={{ color: "white" }} />
+            </Icon>
             <Typography sx={{ color: "white", fontSize: "small" }}>
               FREE PROFILE & PICTURES
             </Typography>
           </Grid>
           <Grid item xs={3}>
+          <Icon sx={{marginLeft:"80px"}}>
+              <GroupsIcon sx={{ color: "white" }} />
+            </Icon>
             <Typography sx={{ color: "white", fontSize: "small" }}>
               SEARCH,SHORTLIST & CONTACT
             </Typography>
           </Grid>
           <Grid item xs={3}>
+          <Icon sx={{marginLeft:"80px"}}>
+              <ChatBubbleIcon sx={{ color: "white" }} />
+            </Icon>
             <Typography sx={{ color: "white", fontSize: "small" }}>
               COMMUNICATE & MOVE AHEAD
             </Typography>
@@ -134,7 +158,6 @@ const Pagedata = () => {
             FEATURED PROFILE
           </Typography>
         </Grid>
-        <Grid container xs={12}></Grid>
         <Grid container xs={12}>
           <Typography
             sx={{ fontWeight: 600, fontSize: "xx-large", marginLeft: "38%" }}
@@ -142,13 +165,15 @@ const Pagedata = () => {
             SUCCESS STORIES
           </Typography>
         </Grid>
+        <br></br>
         <Grid container xs={12}>
           <Grid item xs={6}>
             <Typography
               sx={{
+                // marginLeft: "20%",
                 textAlign: "justify",
                 textJustify: "inter-word",
-                marginLeft: "10px",
+                marginLeft: "150px",
               }}
             >
               Watch out this space it would be loaded with happy customers
@@ -160,7 +185,7 @@ const Pagedata = () => {
         <Grid m={2} container xs={12}>
           <Button
             variant="contained"
-            sx={{ marginRight: "90%", background: "grey" }}
+            sx={{marginLeft:"10%", background: "grey" }}
           >
             More
           </Button>
@@ -181,11 +206,11 @@ const Pagedata = () => {
           </Typography>
         </Grid>
         <Grid container xs={12}>
-          <Grid item xs={3}>
+          <Grid ml={10} item xs={3}>
             <img src={Image2} alt="image2" />
           </Grid>
-          <Grid m={5} item xs={4}>
-            <Typography>ATTN: LAUNCH OF NEW MATRIMONY LAYOUT</Typography>
+          <Grid m={5} item xs={3}>
+            <Typography >ATTN: LAUNCH OF NEW MATRIMONY LAYOUT</Typography>
             <Typography sx={{ alignItems: "justify" }}>
               We pleased to announce new version
             </Typography>
@@ -194,13 +219,13 @@ const Pagedata = () => {
         <Grid m={2} container xs={12}>
           <Button
             variant="contained"
-            sx={{marginLeft:"25%",background: "grey" }}
+            sx={{ marginLeft: "32%", background: "grey" }}
           >
             More
           </Button>
         </Grid>
       </Box>
-      <Grid  m={5}container xs={12}>
+      <Grid m={10} container xs={12}>
         <Grid item xs={4}>
           <img src={Image10} alt="image10" />
         </Grid>
@@ -208,10 +233,10 @@ const Pagedata = () => {
           <img src={Image11} alt="image11" />
         </Grid>
         <Grid item xs={4}>
-        <img src={Image12} alt="image12" />
+          <img src={Image12} alt="image12" />
         </Grid>
       </Grid>
-      <Footer/>
+      <Footer />
     </>
   );
 };

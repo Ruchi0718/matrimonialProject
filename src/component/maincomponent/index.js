@@ -20,6 +20,7 @@ const navItems2 = [
   "SEARCH",
 ];
 
+
 const MainComponent = () => {
   return (
     <>

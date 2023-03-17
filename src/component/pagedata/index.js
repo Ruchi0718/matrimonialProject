@@ -110,16 +110,16 @@ const Pagedata = () => {
         </Grid> */}
         <br></br>
         <Grid container xs={12}>
-          <Grid ml={10} item xs={2}>
+          <Grid item xs={3}>
             <Icon sx={{marginLeft:"80px"}}>
               <BorderColorIcon sx={{ color: "white" }} />
             </Icon>
-            <Typography sx={{ color: "white", fontSize: "small" }}>
+            <Typography sx={{ color: "white", fontSize: "small",paddingLeft:5 }}>
               FREE REGISTRATION
             </Typography>
           </Grid>
           <Grid item xs={3}>
-             <Icon sx={{marginLeft:"80px"}}>
+             <Icon >
               <PersonIcon sx={{ color: "white" }} />
             </Icon>
             <Typography sx={{ color: "white", fontSize: "small" }}>
@@ -127,7 +127,7 @@ const Pagedata = () => {
             </Typography>
           </Grid>
           <Grid item xs={3}>
-          <Icon sx={{marginLeft:"80px"}}>
+          <Icon>
               <GroupsIcon sx={{ color: "white" }} />
             </Icon>
             <Typography sx={{ color: "white", fontSize: "small" }}>
@@ -135,7 +135,7 @@ const Pagedata = () => {
             </Typography>
           </Grid>
           <Grid item xs={3}>
-          <Icon sx={{marginLeft:"80px"}}>
+          <Icon >
               <ChatBubbleIcon sx={{ color: "white" }} />
             </Icon>
             <Typography sx={{ color: "white", fontSize: "small" }}>
